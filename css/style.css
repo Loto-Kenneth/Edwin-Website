@@ -1,0 +1,400 @@
+body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+}
+#video {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: 20px auto;
+}
+#video #form {
+    width: 100%;
+    height: 200px;
+    max-width: 800px;
+}
+header img {
+   height: 10px;
+   min-height:300px;
+   text-align: right;
+}
+
+/* Global */
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+.button_1{
+  height:38px;
+  background:#e8491d;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
+}
+
+.dark{
+  padding:15px;
+  background:#35424a;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+  text-align: center;
+}
+
+/* Header **/
+header{
+  background:#35424a;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#e8491d 3px solid;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+header li{
+  float: right;
+  display:inline;  
+  margin:0px;
+  margin-left: 25px;
+  text-align: center;
+  
+}
+
+header h3{
+  font-size:20px;
+  font-family:sans-serif; 
+  padding-left:260px;
+  margin-top:-100px;  
+}
+
+header nav{
+  float:left;
+  margin-top:10px;
+  margin-botton:40px
+}
+
+header .highlight, header .current a{
+  color:#e8491d;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+/* Showcase */
+#showcase{
+  min-height:300px;  
+  padding-right:70px;
+  background:url('../img/photuba.png') no-repeat;
+  background-size: cover;
+  text-align:center;
+  color:#ffffff;
+}
+
+/* Newsletter */
+#newsletter{
+  padding:15px;
+  color:#ffffff;
+  background:#35424a
+}
+
+#newsletter h1{
+  float:left;
+}
+
+#newsletter form {
+  float:right;
+  margin-top:15px;
+  
+}
+
+#newsletter input[type="email"]{
+  padding:4px;
+  height:25px;
+  width:250px;
+  color: black;
+}
+
+/* Boxes */
+#boxes{
+  margin-top:60px;
+}
+
+#boxes .box{
+  float: right;
+  text-align: center;
+  width:700%;
+  padding:10px;
+}
+
+#boxes .box img{
+  width:350px;
+  
+}
+
+/* Sidebar */
+aside#sidebar{
+  float: right;
+  width:30%;
+  margin-top:10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  width:90%;
+  padding:5px;
+}
+
+
+
+/* Services */
+ul#services li{
+  list-style: none;
+  padding:20px;
+  border: #cccccc solid 1px;
+  margin-bottom:5px;
+  background:#e6e6e6;
+}
+
+footer{
+  padding: 5px;
+  margin-top:50px;
+  color:#ffffff;
+  background-color:#e8491d ;
+  text-align: center;
+  height: 40px;
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  header{
+    padding-bottom:20px;
+  }
+
+  #showcase h1{
+    margin-top:40px;
+  }
+
+  #newsletter button, .quote button{
+    display:block;
+    width:100%;
+  }
+
+  #newsletter form input[type="email"], .quote input, .quote textarea{
+    width:100%;
+    margin-bottom:5px;
+  }
+}
+.form {
+  width: 250px;
+  height: 382px;
+  background: linear-gradient(to top,rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+  position: absolute;
+  top: 120px;
+  left: 60px;
+  border-radius: 10px;
+  padding: 25px;
+  margin-top: 250px;
+}
+.form h2 {
+  width: 200px;
+  font-family: sans-serif;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  border-radius: 10px;
+  min-height:30px;
+  margin: 2px;
+  padding: 23px;
+  padding-top: 5px;
+}
+.form input {
+  width: 180px;
+  height: 30px;
+  background: transparent;
+  border-bottom: 1px solid orange;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: white;
+  margin-top: 1px;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  font-size:15px;
+}
+.form input:focus {
+  outline: none;
+}
+::placeholder {
+  color: white;
+  font-family: Arial;
+}
+.btnn {
+  width: 180px;
+  height: 40px;
+  background: orange;
+  border: none;
+  font-size: 18px;
+  margin-top: 10px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.btnn:hover {
+  background: white;
+  color: #ff7200;
+}
+.btnn a {
+   text-decoration: none;
+   font-weight: bold;
+   color: black;
+}
+.form .link {
+   font-family: Arial;
+   font-size: 18px;
+   text-align: center;
+   padding-top: 10px;
+}
+.form .link a {
+   text-decoration: none;
+   color: #ff7200;
+}
+.liw {
+   padding-bottom: 60px;
+   padding-top: 5px;
+   text-decoration: none;
+   color:white;
+   font-size: 18px;
+}
+.icons a {   
+   color:white;
+}
+.icons ion-icon {
+   color: white;
+   font-size: 60px;
+   padding-left:14px;
+   padding-top:4px;
+   height: 60px;
+   
+}
+.icons ion-icon:hover {
+    color: orange;
+}
+* {
+ margin:0px;
+ padding:0px;
+ box-sizing:border-box;
+ font-family: sans-serif;
+}
+ .contact  {
+ min-height: 100px;
+ padding:50px;
+ text-align: center;
+ background-color:#e8491d;
+ padding-top:50px;
+}
+.container {
+ margin:0 auto;
+ max-width:800px;
+}
+.container h2{
+ font-size:26px;
+ max-width:40px;
+ color:black;
+ display: inline;
+
+}
+.contact-form h3 {
+    font-size:20px;
+    margin-bottom:30px;
+    color: black;
+}
+.form-group{
+    margin-bottom:30px;
+}
+input,textarea {
+    width:100%;
+    margin-bottom:10px;
+    padding:12px;
+    border-radius:5px;
+    color:black;
+}
+::placeholder{
+    font-family:Arial;
+    color:black;
+} 
+input:focus;
+textarea:focus;{
+    outline:none;
+    box-shadow:0 0 8px #bbb;
+}
+button {
+    display: inline-block;
+    background-color:#00d003;
+    height:40px;
+    width: 70px;
+    border:none;
+    cursor:pointer;
+}
+button:hover {
+    background-color:white;
+}
+.contact-info {
+    text-align:left;
+}
+.contact-info p{
+    margin-bottom:10px;
+    color:black ;
+    font-size:20px;
+}
+.contact-info i{
+    color:#00d003;
+    margin-right:6px;
+    font-size:20px;
+    padding-top:20px;
+}
+.icon a {
+   text-decoration: none;
+   color:blue;
+   
+}
+.icon ion-icon {
+   color: blue;
+   padding-left:50px;
+   padding-top:25px;
+   height:40px;
+   width:40px;
+}
+.icon ion-icon:hover {
+    color: orange;
+}
