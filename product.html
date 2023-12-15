@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="img/favicon.png">
+    
+    <script>
+        function changeDescription() {
+            var userInput = prompt("Order:");
+            if (userInput !== null) {
+                document.getElementById("").innerText = userInput;
+            }
+        }
+    </script>
+  </head>
+  <body>
+    <header>
+      <img src="img/tuba.png">      
+          <h3><span class="highlight"><mark>√Pure tuba<br>√Sap-sarap<br>√Sure kana dito</mark></h3></span>
+        <nav>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">ABOUT</a></li>           
+            <li><a href="contact.html">CONTACT</a></li>
+            <li class="current"><a href="product.html">PRODUCT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="newsletter">
+      <div class="container">
+        <h1>Subscribe To Our Product</h1>
+        <form>
+          <input type="email" placeholder="Enter Email..." required>
+          <button type="submit" class="button_1">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="main">
+      <div class="container">
+        <article id="main-col">
+          <h1 class="page-title">PRODUCT</h1>
+          <ul id="services">
+            <li>
+              <h3>TUBA/BAHALINA OR RED WINE</h3>
+              <a href="https://sg.docworkspace.com/d/sIMrpobbcAbiK7asG?sa=share.copy_link" onclick="changeDescription()">
+    <img src="img/1.png" alt="Description of the image" id="imageDescription">
+</a>						 
+            </li>
+            <li>
+              <h3>SIMI-BAHAL</h3>
+<a href="https://sg.docworkspace.com/d/sICfpobbcAfeQ7asG?sa=share.copy_link" onclick="changeDescription()">
+    <img src="img/2.png" alt="Description of the image" id="imageDescription">
+</a>						 
+            </li>
+            <li>
+              <h3>ORIGINAL SUKANG PINOY TUBA</h3>
+<a href="https://sg.docworkspace.com/d/sIPvpobbcAZWU7asG?sa=share.copy_link" onclick="changeDescription()">
+    <img src="img/3.png" alt="Description of the image" id="imageDescription">
+</a>						 
+            </li>
+          </ul>
+        </article>
+
+        <aside id="sidebar">
+          <div class="dark">
+            <h3>ORDER NOW/SEND A MESSAGE</h3>
+            <form class="quote">
+  						<div>
+  							<label>Name</label><br>
+  							<input type="text" placeholder="Name">
+  						</div>
+  						<div>
+  							<label>Email</label><br>
+  							<input type="email" placeholder="Email Address">
+  						</div>
+  						<div>
+  							<label>Message</label><br>
+  							<textarea placeholder="Message"></textarea>
+  						</div>
+  						<button class="button_1" type="submit">Send</button>
+					</form>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 My  Website</p>
+    </footer>
+  </body>
+</html>
